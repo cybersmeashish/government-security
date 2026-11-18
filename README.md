@@ -23,3 +23,7 @@ Use the shared [transformation method](https://github.com/cybersmeashish/ashish-
 Sector-specific requirements must be linked to the responsible jurisdiction's authoritative source and applicable version.
 
 [Industry map](https://github.com/cybersmeashish/cybersmeashish/blob/main/docs/industries.md) · [Scoped collaboration](https://github.com/cybersmeashish/cybersmeashish/blob/main/docs/work-with-me.md)
+
+## Disconnected-cloud reference contribution
+
+[Inspect the Government case](case-studies/sovereign-disconnected-cloud-reference.md) and its linked implementation, measured evidence and deployment questions.
