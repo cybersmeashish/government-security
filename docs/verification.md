@@ -19,6 +19,15 @@ Recorded 19 November 2026. The work is a synthetic reference portfolio with indi
 
 **Passed means actual observations matched stated expectations.** Expected-gap cases identify absent durable replay protection, incomplete detection and unsupported placement claims. They are not assertions that those controls are production safe.
 
+## GitHub Actions verification
+
+The [published-code run](https://github.com/cybersmeashish/government-security/actions/runs/44452821554) completed successfully for commit [`cf7c34ef9044`](https://github.com/cybersmeashish/government-security/commit/cf7c34ef9044e826654c57592bf8797548245c3a).
+The actual regression-step log reported **54 tests; OK** in 2.053 seconds. Its downloaded artifact recorded **63 passed scenario expectations**, **22 matching government input hashes**, **52 verified pinned shared inputs** and explicit network isolation on Linux x86_64 / Python 3.12.16.
+
+[Permanent run summary](../evidence/2026-11-19/github-actions-result.json) · [Unmodified CI artifact](../evidence/2026-11-19/github-actions-isolation-report.json)
+
+The original artifact is preserved beyond the workflow's configured 14-day hosted retention. The code commit identifies the tested implementation; the later evidence-only commit changes no runtime inputs. CI also derived the missing `permit-after-snapshot` record from the actual live/restored fixture sets.
+
 ## Input and count scope
 
 The 54 regression tests are repeated across execution environments, not added together. The 63 scenarios are government-specific observations and are not added to earlier shared-repository scenario counts. The shared six PQ compatibility experiments are linked historical host evidence; this government workflow does not run or count them.

@@ -28,7 +28,7 @@ Public services, sovereign operations, and accountable national cyber capability
 | [Disconnected regional office](case-studies/disconnected-regional-office.md) | Locally permitted work, stopped finalization, emergency authority, signed imports and restoration |
 | [Public-sector AI assistant](case-studies/public-sector-ai-assistant.md) | Scoped retrieval, restricted tools, human decision ownership and signed router-data admission |
 
-**Observed reference evidence — 19 November 2026:** 54 unique regression tests and 63 isolated scenario expectations passed; 22 government input hashes and 52 shared-source hashes verified. Expected unsafe gaps are recorded.
+**Observed reference evidence — 19 November 2026:** 54 unique regression tests and 63 isolated scenario expectations passed locally and in GitHub Actions; 22 government input hashes and 52 shared-source hashes verified. Expected unsafe gaps are recorded.
 
 [All 24 contributions](docs/contributions-01-24.md) · [Reader navigation](PORTFOLIO.md) · [Original results](research/results/2026-11-19-government-local-authority.md) · [Executive brief](briefs/government-local-authority-decision.md) · [Measured verification](docs/verification.md)
 
