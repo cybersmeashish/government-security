@@ -1,0 +1,36 @@
+{
+  "synthetic": true,
+  "owner": "procurement",
+  "criteria": [
+    {
+      "id": "SUP-1",
+      "question": "Who controls signer and artifact trust inputs?",
+      "acceptance": "pinned verification keys",
+      "method": "tested-fixture"
+    },
+    {
+      "id": "SUP-2",
+      "question": "Can the supplier's dependencies operate during disconnection?",
+      "acceptance": "local identity/time/update/recovery inventory",
+      "method": "design-and-linked-reference"
+    },
+    {
+      "id": "SUP-3",
+      "question": "Are package destination, build context and approvals checked?",
+      "acceptance": "signed admission negative cases",
+      "method": "tested-fixture"
+    },
+    {
+      "id": "SUP-4",
+      "question": "Where do workload, backup and support access reside?",
+      "acceptance": "independent provider/site evidence",
+      "method": "unresolved-deployment-gate"
+    },
+    {
+      "id": "SUP-5",
+      "question": "What state survives restart or key loss?",
+      "acceptance": "durable anti-rollback and protected recovery",
+      "method": "unresolved-deployment-gate"
+    }
+  ]
+}

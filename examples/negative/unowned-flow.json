@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "jurisdiction_profile": "US-federal-civilian-reference",
+  "owners": {
+    "service": "Synthetic agency public-service director",
+    "security": "Synthetic agency CISO",
+    "operations": "Synthetic regional operations lead",
+    "records": "Synthetic records/privacy lead",
+    "procurement": "Synthetic acquisition lead",
+    "ai": "Synthetic AI service owner",
+    "authorizing": "Synthetic agency authorizing official"
+  },
+  "missions": [
+    {
+      "id": "citizen-permit",
+      "agency": "civic",
+      "site": "north",
+      "service_owner": "service",
+      "security_owner": "security",
+      "failure_decision_owner": "operations",
+      "citizen_impact": "Delay in synthetic permit review; no real benefit or permit determination.",
+      "dependencies": [
+        "local-authority",
+        "record-store",
+        "time",
+        "central-finalization"
+      ],
+      "permitted_actions": [
+        "scoped-read",
+        "local-review-acknowledgment"
+      ],
+      "stopped_actions": [
+        "final-determination",
+        "cross-agency-read",
+        "unapproved-export"
+      ],
+      "recovery_acceptance": "Restore approved config, records and software keys; enumerate post-snapshot loss."
+    },
+    {
+      "id": "public-registry",
+      "agency": "registry",
+      "site": "north",
+      "service_owner": "records",
+      "security_owner": "security",
+      "failure_decision_owner": "operations",
+      "citizen_impact": "Delay in synthetic record verification; integrity and disclosure risks.",
+      "dependencies": [
+        "local-authority",
+        "record-store",
+        "key-custody",
+        "evidence-retention"
+      ],
+      "permitted_actions": [
+        "scoped-registry-read"
+      ],
+      "stopped_actions": [
+        "cross-agency-read",
+        "bulk-disclosure",
+        "unverified-import"
+      ],
+      "recovery_acceptance": "Verify snapshot integrity and retained record count in an empty target."
+    },
+    {
+      "id": "emergency-continuity",
+      "agency": "civic",
+      "site": "north",
+      "service_owner": "service",
+      "security_owner": "security",
+      "failure_decision_owner": "operations",
+      "citizen_impact": "Local review continuity during central loss; no dispatch or life-safety command.",
+      "dependencies": [
+        "local-approvers",
+        "local-authority",
+        "time",
+        "recovery-material"
+      ],
+      "permitted_actions": [
+        "context-bound-two-duty-emergency-read"
+      ],
+      "stopped_actions": [
+        "self-approved-emergency-read",
+        "reused-approval",
+        "stale-finalization"
+      ],
+      "recovery_acceptance": "Demonstrate restored fixture state; re-provision ephemeral identities separately."
+    }
+  ],
+  "flows": [
+    {
+      "id": "operator-record",
+      "source": "north-operator",
+      "destination": "north-record-service",
+      "owner": "unknown-owner",
+      "purpose": "local-review",
+      "approval": "server-held record and action scope",
+      "failure_behavior": "deny unknown, expired, revoked, wrong-agency, wrong-site and unscoped requests"
+    },
+    {
+      "id": "import",
+      "source": "quarantine",
+      "destination": "north-approved-artifacts",
+      "owner": "procurement",
+      "classification": "operational-synthetic",
+      "purpose": "approved-update",
+      "approval": "pinned release key and separate security/operations signatures",
+      "failure_behavior": "keep rejected bundles outside active state"
+    },
+    {
+      "id": "evidence-export",
+      "source": "north-local-evidence",
+      "destination": "agency-csoc",
+      "owner": "security",
+      "classification": "operational-synthetic",
+      "purpose": "incident-review",
+      "approval": "trusted exporter identity, recipient and purpose allowlist",
+      "failure_behavior": "deny unknown recipient, wrong purpose, classification, site or replay"
+    },
+    {
+      "id": "central-finalization",
+      "source": "north-review",
+      "destination": "central-decision-authority",
+      "owner": "authorizing",
+      "classification": "restricted-synthetic",
+      "purpose": "final-determination",
+      "approval": "fresh connected central authority; modeled threshold 300 seconds",
+      "failure_behavior": "stop while disconnected or beyond the declared freshness threshold"
+    }
+  ]
+}

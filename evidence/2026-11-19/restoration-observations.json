@@ -1,0 +1,39 @@
+{
+  "samples_seconds": [
+    0.00035045399999944493,
+    0.0003024540001206333,
+    0.00030295400028990116,
+    0.0002894119988923194,
+    0.00029053800062683877
+  ],
+  "restored_records": 3,
+  "live_records": 4,
+  "missing_record_ids": [
+    "permit-after-snapshot"
+  ],
+  "scope": "tiny software-key/config/record fixture; not whole-service RTO/RPO",
+  "environment": {
+    "python": "3.12.16",
+    "system": "Linux",
+    "machine": "aarch64"
+  },
+  "storage": "dedicated disposable 32 MiB tmpfs in the constrained container",
+  "timing_method": "elapsed approval-signature construction plus restore call; software-key recovery was separately verified",
+  "runtime_restrictions": {
+    "network_mode": "none",
+    "read_only_root": true,
+    "user": "65532:65532",
+    "capabilities_dropped": [
+      "ALL"
+    ],
+    "no_new_privileges": true,
+    "memory_bytes": 268435456,
+    "nano_cpus": 1000000000,
+    "pids_limit": 64,
+    "tmpfs": {
+      "/lab-state": "rw,nodev,nosuid,noexec,size=32m,uid=65532,gid=65532"
+    },
+    "image_id": "sha256:575f890de6a57a28dbdae2148fe9cc40e83eacd620ad1ef473ca81e77f18bcb3",
+    "exit_code": 0
+  }
+}

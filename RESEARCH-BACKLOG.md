@@ -1,4 +1,6 @@
-# First research contributions
+# Government research backlog
+
+The initial synthetic reference questions below are addressed in [24 published contribution artifacts](docs/contributions-01-24.md). Continue with the [operational gates and independent validation roadmap](ROADMAP.md); real deployment and adoption are distinct from reference completion.
 
 - Build a synthetic case for **Citizen-service data and actions**, then publish: synthetic record-access and action-approval cases.
 - Build a synthetic case for **Sovereign operations**, then publish: boundary register and supplier dependency evidence.

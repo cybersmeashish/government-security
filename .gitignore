@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.venv/
+.upstream/
+vendor/
+evidence/local/
+evidence/ci/

@@ -1,0 +1,21 @@
+{
+  "declared": {
+    "workload": "north",
+    "backup": "north",
+    "evidence": "north",
+    "recovery": "north"
+  },
+  "observed_fixture_claims": {
+    "workload": "north",
+    "backup": "north",
+    "evidence": "north",
+    "recovery": "north"
+  },
+  "conflict": {
+    "workload": "north",
+    "backup": "south",
+    "evidence": "north",
+    "recovery": "north"
+  },
+  "scope": "String claims, not physical/provider residency evidence."
+}

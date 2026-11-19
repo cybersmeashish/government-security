@@ -1,0 +1,15 @@
+control_id,official_title,catalog_version,proposed_owner,artifact,test_or_scenario,unresolved_gap
+AC-2,Account Management,5.2.0,security,identity/privileged-and-service-authority.md,AuthorityTests.test_revoked_session_denied,ephemeral sessions; no full account lifecycle
+AC-3,Access Enforcement,5.2.0,service,applications/citizen-service-api-review.md,HTTPTests.test_live_api_scoped_read_and_cross_record_denial,loopback fixture; no production identity
+AC-5,Separation of Duties,5.2.0,security/operations,identity/privileged-and-service-authority.md,AuthorityTests.test_duplicate_duty_and_raw_role_token_denied,local handles; organizational duties require independent assessment
+AC-6,Least Privilege,5.2.0,service,ai/retrieval-tool-and-human-authority.md,AITests.test_arbitrary_and_final_decision_tools_denied,only two illustrative tools
+AU-6,"Audit Record Review, Analysis, and Reporting",5.2.0,security,operations/monitoring-and-freshness.md,EvidenceTests.test_denial_and_emergency_rules,illustrative rules; unknown-event gap
+AU-9,Protection of Audit Information,5.2.0,security,operations/evidence-export-authority.md,EvidenceTests.test_export_filters_fields_and_records_custody,digest not protected durable audit custody
+CM-3,Configuration Change Control,5.2.0,operations,operations/government-update-admission.md,ReferenceAndModelTests.test_model_replay_and_downgrade_denied,durable change control not established
+CM-8,System Component Inventory,5.2.0,operations,missions/mission-authority-register.md,RegisterTests.test_complete_register_passes,synthetic limited inventory
+CP-9,System Backup,5.2.0,operations,operations/restoration/clean-service-restore.md,scenario:clean_restore_config_records_keys,tiny encrypted fixture; no realistic service objective
+CP-10,System Recovery and Reconstitution,5.2.0,operations,operations/restoration/clean-service-restore.md,scenario:actual_post_snapshot_change_absent,not whole-service restoration
+IR-4,Incident Handling,5.2.0,security,operations/incident-response/local-response-exercise.md,scenario:local_revocation_enforced,no agency exercise or communications measurement
+SA-9,External System Services,5.2.0,procurement,applications/supplier-and-update-admission.md,examples/supplier-acceptance.json,no real supplier evaluation
+SC-12,Cryptographic Key Establishment and Management,5.2.0,security,architecture/sovereign-boundaries.md,scenario:clean_restore_config_records_keys,software wrapping material is ephemeral
+SI-4,System Monitoring,5.2.0,security,operations/monitoring-and-freshness.md,scenario:unknown_event_detection_gap,expected-gap result; not complete monitoring

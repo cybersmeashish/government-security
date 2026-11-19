@@ -1,0 +1,9 @@
+field,example,fixture_classification,owner,storage_or_flow,retention_decision
+record_id,permit-001,restricted-synthetic,records,record-store,owner decision required
+agency,civic,operational-synthetic,service,policy-and-record,owner decision required
+site,north,operational-synthetic,operations,policy-and-record,owner decision required
+citizen,Synthetic Person A,restricted-synthetic,records,record-store; not evidence export,owner decision required
+address,Fictional Address A,restricted-synthetic,records,record-store; not evidence export,owner decision required
+status,pending,restricted-synthetic,service,record-store and filtered AI summary,owner decision required
+event_type,denied,operational-synthetic,security,filtered incident-review export,owner decision required
+event_time,100 modeled seconds,operational-synthetic,operations,local evidence; invalid time quarantined,owner decision required

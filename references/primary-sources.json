@@ -1,0 +1,156 @@
+[
+  {
+    "id": "csf2",
+    "title": "NIST CSWP 29 \u2014 Cybersecurity Framework 2.0",
+    "version": "2024-02-26",
+    "url": "https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf",
+    "final_url": "https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf",
+    "content_type": "application/pdf",
+    "retrieved_at": "2026-11-18T16:10:22.692993+00:00",
+    "retrieved": true,
+    "bytes": 1518858,
+    "sha256": "3c31f46fee98cac0c4323453e5109291a213b4de7fef8c058af9bf67f717433c"
+  },
+  {
+    "id": "fips199",
+    "title": "FIPS 199 \u2014 security categorization",
+    "version": "2004-02",
+    "url": "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.199.pdf",
+    "final_url": "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.199.pdf",
+    "content_type": "application/pdf",
+    "retrieved_at": "2026-11-18T16:10:12.630281+00:00",
+    "retrieved": true,
+    "bytes": 80356,
+    "sha256": "73d19f05f71e30f378050f178aa3943c38790bbae56c07f2b5708c5a1a90242f"
+  },
+  {
+    "id": "controls",
+    "title": "NIST SP 800-53 Rev. 5 official OSCAL catalog",
+    "version": "Rev. 5; snapshot recorded",
+    "url": "https://raw.githubusercontent.com/usnistgov/oscal-content/main/nist.gov/SP800-53/rev5/json/NIST_SP-800-53_rev5_catalog.json",
+    "final_url": "https://raw.githubusercontent.com/usnistgov/oscal-content/main/nist.gov/SP800-53/rev5/json/NIST_SP-800-53_rev5_catalog.json",
+    "content_type": "text/plain; charset=utf-8",
+    "retrieved_at": "2026-11-18T16:10:53.814207+00:00",
+    "retrieved": true,
+    "bytes": 10448237,
+    "sha256": "64ca6b4161de51ab6af098a7d101d326f14c95e1abf721396cd8a049e8115eeb",
+    "catalog_title": "Electronic (OSCAL) Version of NIST SP 800-53 Rev 5.2.0 Controls and SP 800-53A Rev 5.2.0 Assessment Procedures",
+    "catalog_version": "5.2.0",
+    "catalog_last_modified": "2026-10-22T11:30:00.00000-00:00"
+  },
+  {
+    "id": "baselines",
+    "title": "NIST SP 800-53B \u2014 control baselines",
+    "version": "2020-10",
+    "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53B.pdf",
+    "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53B.pdf",
+    "content_type": "application/pdf",
+    "retrieved_at": "2026-11-18T16:10:13.580008+00:00",
+    "retrieved": true,
+    "bytes": 1627293,
+    "sha256": "8a9dae903c2e4924d7b67c246faa32757d15f9731abb85922fad63f9ea0e02fa"
+  },
+  {
+    "id": "zerotrust",
+    "title": "NIST SP 800-207 \u2014 Zero Trust Architecture",
+    "version": "2020-08",
+    "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf",
+    "final_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf",
+    "content_type": "application/pdf",
+    "retrieved_at": "2026-11-18T16:10:19.673350+00:00",
+    "retrieved": true,
+    "bytes": 966908,
+    "sha256": "0290d6ece24874287316f4bf430fef770aa4ec08a2227c8f2c1e5b2ff975e03d"
+  },
+  {
+    "id": "airmf",
+    "title": "NIST AI RMF 1.0",
+    "version": "2023-01",
+    "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf",
+    "final_url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf",
+    "content_type": "application/pdf",
+    "retrieved_at": "2026-11-18T16:10:15.884095+00:00",
+    "retrieved": true,
+    "bytes": 1946127,
+    "sha256": "7576edb531d9848825814ee88e28b1795d3a84b435b4b797d3670eafdc4a89f1"
+  },
+  {
+    "id": "cisa",
+    "title": "CISA Zero Trust Maturity Model v2.0",
+    "version": "2023-04",
+    "url": "https://www.cisa.gov/sites/default/files/2023-04/zero_trust_maturity_model_v2_508.pdf",
+    "retrieved": false,
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "mlkem",
+    "title": "FIPS 203 \u2014 ML-KEM",
+    "version": "2024-08-13",
+    "url": "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.203.pdf",
+    "final_url": "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.203.pdf",
+    "content_type": "application/pdf",
+    "retrieved_at": "2026-11-18T16:10:15.956945+00:00",
+    "retrieved": true,
+    "bytes": 1252341,
+    "sha256": "fe1f12f32a7e44ec9fdebbf400cda843a40b506dee676725234dc6f7923b6cac"
+  },
+  {
+    "id": "mldsa",
+    "title": "FIPS 204 \u2014 ML-DSA",
+    "version": "2024-08-13",
+    "url": "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.204.pdf",
+    "final_url": "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.204.pdf",
+    "content_type": "application/pdf",
+    "retrieved_at": "2026-11-18T16:10:17.131376+00:00",
+    "retrieved": true,
+    "bytes": 3291746,
+    "sha256": "57239b9f84c03227eda3ca0991204dc7764c79af9ce2e6824eda774918d46b6b"
+  },
+  {
+    "id": "fisma",
+    "title": "44 USC 3554 \u2014 federal agency responsibilities",
+    "version": "current preliminary display; retrieved date recorded",
+    "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title44-section3554&num=0&edition=prelim",
+    "retrieved": false,
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "id": "fisma-enactment",
+    "url": "https://www.govinfo.gov/content/pkg/PLAW-113publ283/pdf/PLAW-113publ283.pdf",
+    "retrieved": true,
+    "bytes": 233997,
+    "sha256": "96ab24c78d410963ebb0bcd519dbe4b95ee800400c49ea4448e6d3f39c3eb917",
+    "title": "Federal Information Security Modernization Act of 2014, Public Law 113-283",
+    "version": "2014 enactment; historical statutory context",
+    "usable_primary_document": true
+  },
+  {
+    "id": "uscode2024",
+    "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title44/pdf/USCODE-2024-title44-chap35-subchapII-sec3554.pdf",
+    "retrieved": true,
+    "bytes": 141384,
+    "sha256": "3ebdc4ea33c99576f197a1e2b375ae0bb077a1747e132e071a3f37a1b5780c8f",
+    "title": "44 USC 3554 \u2014 2024 codified edition",
+    "version": "2024 edition; later amendment status requires separate verification",
+    "usable_primary_document": true
+  },
+  {
+    "id": "cisa-page",
+    "url": "https://www.cisa.gov/zero-trust-maturity-model",
+    "retrieved": false,
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "uscode2025",
+    "title": "44 USC 3554 \u2014 2025 codified edition",
+    "version": "2025 edition; no claim of later amendment verification",
+    "url": "https://www.govinfo.gov/content/pkg/USCODE-2025-title44/pdf/USCODE-2025-title44-chap35-subchapII-sec3554.pdf",
+    "retrieved_at": "2026-11-19T03:27:07.755714+00:00",
+    "retrieved": false,
+    "sha256": "ab214ce9f7a706cc4ee93703502f950222090c2547e47fafd75a299545919743",
+    "bytes": 44172,
+    "http_response_received": true,
+    "usable_primary_document": false,
+    "error": "HTTP 200 body is an HTML error page, not the requested statutory PDF; not used as authority"
+  }
+]

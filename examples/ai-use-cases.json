@@ -1,0 +1,42 @@
+{
+  "synthetic": true,
+  "cases": [
+    {
+      "id": "record-summary",
+      "owner": "ai",
+      "tool": "summarize",
+      "data": "one scoped record",
+      "allowed_output": [
+        "service",
+        "status"
+      ],
+      "human_decision": "public-service owner",
+      "evaluation": "record/agency/site boundary, tool and field-filter cases",
+      "model": "deterministic fixture"
+    },
+    {
+      "id": "review-marker",
+      "owner": "service",
+      "tool": "acknowledge",
+      "data": "one scoped record",
+      "allowed_output": [
+        "local-review-marker"
+      ],
+      "human_decision": "review operator",
+      "evaluation": "viewer denied; authorised reviewer allowed",
+      "model": "deterministic fixture"
+    },
+    {
+      "id": "public-guidance",
+      "owner": "ai",
+      "tool": "future-public-guidance",
+      "data": "approved public sources",
+      "allowed_output": [
+        "guidance-with-sources"
+      ],
+      "human_decision": "service owner",
+      "evaluation": "future real-model groundedness and accessibility study",
+      "model": "not implemented"
+    }
+  ]
+}

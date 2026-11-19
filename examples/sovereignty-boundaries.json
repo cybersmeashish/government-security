@@ -1,0 +1,48 @@
+{
+  "synthetic": true,
+  "site": "north",
+  "dimensions": [
+    {
+      "dimension": "data",
+      "owner": "records",
+      "boundary": "agency/object scopes",
+      "evidence": "read and disclosure cases"
+    },
+    {
+      "dimension": "administrators",
+      "owner": "security",
+      "boundary": "local scoped principals",
+      "evidence": "revocation and expiry cases"
+    },
+    {
+      "dimension": "keys",
+      "owner": "security",
+      "boundary": "ephemeral software vault and separate wrapping material",
+      "evidence": "encrypted restore cases"
+    },
+    {
+      "dimension": "suppliers",
+      "owner": "procurement",
+      "boundary": "pinned code, wheels, signers and builder",
+      "evidence": "source hashes and admission rejection"
+    },
+    {
+      "dimension": "support",
+      "owner": "operations",
+      "boundary": "no support authority in fixture",
+      "evidence": "design restriction, not provider enforcement"
+    },
+    {
+      "dimension": "placement",
+      "owner": "operations",
+      "boundary": "declared site labels",
+      "evidence": "unverified/conflict/matching-claim cases"
+    },
+    {
+      "dimension": "recovery",
+      "owner": "operations",
+      "boundary": "empty target plus security/operations approval",
+      "evidence": "timed restore and missing-record enumeration"
+    }
+  ]
+}

@@ -1,0 +1,731 @@
+{
+  "schema_version": 1,
+  "observed_at": "2026-11-19T03:33:33.778404+00:00",
+  "scope": "Synthetic government reference, not a deployed or accredited public service.",
+  "restrictions": {
+    "network_mode": "none",
+    "read_only_root": true,
+    "user": "65532:65532",
+    "capabilities_dropped": [
+      "ALL"
+    ],
+    "no_new_privileges": true,
+    "memory_bytes": 268435456,
+    "nano_cpus": 1000000000,
+    "pids_limit": 64,
+    "tmpfs": {
+      "/lab-state": "rw,nodev,nosuid,noexec,size=32m,uid=65532,gid=65532"
+    },
+    "image_id": "sha256:575f890de6a57a28dbdae2148fe9cc40e83eacd620ad1ef473ca81e77f18bcb3",
+    "exit_code": 0
+  },
+  "source_matches_image": true,
+  "source_manifest": {
+    "Dockerfile": "c5e75ae798a04f86dc1a3927a0c9a239fcf8a55d29ba9751fdccc177e9010469",
+    "examples/ai-use-cases.json": "03067e09f5d20531722ac9c4abff3e0eb585f8f85a052f26730f262e376e8e5b",
+    "examples/government-register.json": "d505f6cb49b2cb031d3f4930ad60089568724cd7a59630c73d74774ff5dfb58f",
+    "examples/negative/unowned-flow.json": "386f457f77cd05716eb554bacb73ad5f86c181b9126bd937a1cd67d25fdc3181",
+    "examples/placement-claims.json": "9e00f3e8f749c043b9c6708d1bd0972fc8350ae0a1c903da9c99d914ce430f0b",
+    "examples/sovereignty-boundaries.json": "06c79a70370a782778ba4169d83bc8777c008419e928a29f6e9468059826c8e8",
+    "examples/supplier-acceptance.json": "6d1375eb0ab0efd4f9c4af67ab1d8eb3e0118fd9c6818d20e09acb662660f0b8",
+    "govlab/__init__.py": "fa0264b0b3f9d16dd3a034b323b1274ff88c46fae36df873dc1a7d80d7d27e4e",
+    "govlab/evidence.py": "7f92881b954c474497c65bac6b06f1ed0f548e73f867bcf189adc2887da24554",
+    "govlab/model.py": "071ba59412ef37905bc6c245750526ec95e325cc380f1769b8ead29750bf82db",
+    "govlab/policy.py": "56720a074e51fbe77e58ae85b697b71d77c3da86f389f5256ef3fbdfb093f341",
+    "govlab/reference.py": "2af604ace3c6a16096feb412137ba43d52d940eefe514943f9df78f9a2020626",
+    "govlab/service.py": "dfd124df9183b2c20c453d56d4d9f5dbc9fed70172b5bf079879054fc99b5832",
+    "references/upstream-lock.json": "9a0aa2193c94b673e4c11b857e65cf75279de239a6cc965db187c5e0a00c1812",
+    "requirements.lock": "c5f30a7ce5ac66cfabe098d21bd12658219ce7cc0afb4930f41e0fcfd52ad0f2",
+    "tests/test_government.py": "b99f44174872556a753b6b87560105464f8ab032583b76cf958458bdc37e0bef",
+    "tools/__init__.py": "72990cb5987feba9a5d1aa366a4e4b29d886a46b4a53887d80eb3f3f643e17d9",
+    "tools/exercise.py": "2fbdda2770b30c270a0cb8180cbcf15c352b99bea0ef46538d23cef31947a6ee",
+    "tools/prepare_reference.py": "4273f1496331b574b9a70251f0e4c3452cda9a42c1dc41798ae4d343dc211ef2",
+    "tools/run_isolated_lab.py": "724ddb39a3987a26b5edccd2ff772d269da45c42b90211a0d78bbeda906da514",
+    "tools/source_manifest.py": "45679d679cdd40560f996461b171d7c642b1c3d98d9c6739485c388f71c36625",
+    "tools/validate_registers.py": "20e50fb61ca5e563cc33fcecca7658b148708a37158aef94cd1e4edc99966bf3"
+  },
+  "experiment": {
+    "schema_version": 1,
+    "observed_at": "2026-11-19T03:33:33.627812+00:00",
+    "synthetic": true,
+    "environment": {
+      "python": "3.12.16",
+      "system": "Linux",
+      "machine": "aarch64"
+    },
+    "source_manifest": {
+      "Dockerfile": "c5e75ae798a04f86dc1a3927a0c9a239fcf8a55d29ba9751fdccc177e9010469",
+      "examples/ai-use-cases.json": "03067e09f5d20531722ac9c4abff3e0eb585f8f85a052f26730f262e376e8e5b",
+      "examples/government-register.json": "d505f6cb49b2cb031d3f4930ad60089568724cd7a59630c73d74774ff5dfb58f",
+      "examples/negative/unowned-flow.json": "386f457f77cd05716eb554bacb73ad5f86c181b9126bd937a1cd67d25fdc3181",
+      "examples/placement-claims.json": "9e00f3e8f749c043b9c6708d1bd0972fc8350ae0a1c903da9c99d914ce430f0b",
+      "examples/sovereignty-boundaries.json": "06c79a70370a782778ba4169d83bc8777c008419e928a29f6e9468059826c8e8",
+      "examples/supplier-acceptance.json": "6d1375eb0ab0efd4f9c4af67ab1d8eb3e0118fd9c6818d20e09acb662660f0b8",
+      "govlab/__init__.py": "fa0264b0b3f9d16dd3a034b323b1274ff88c46fae36df873dc1a7d80d7d27e4e",
+      "govlab/evidence.py": "7f92881b954c474497c65bac6b06f1ed0f548e73f867bcf189adc2887da24554",
+      "govlab/model.py": "071ba59412ef37905bc6c245750526ec95e325cc380f1769b8ead29750bf82db",
+      "govlab/policy.py": "56720a074e51fbe77e58ae85b697b71d77c3da86f389f5256ef3fbdfb093f341",
+      "govlab/reference.py": "2af604ace3c6a16096feb412137ba43d52d940eefe514943f9df78f9a2020626",
+      "govlab/service.py": "dfd124df9183b2c20c453d56d4d9f5dbc9fed70172b5bf079879054fc99b5832",
+      "references/upstream-lock.json": "9a0aa2193c94b673e4c11b857e65cf75279de239a6cc965db187c5e0a00c1812",
+      "requirements.lock": "c5f30a7ce5ac66cfabe098d21bd12658219ce7cc0afb4930f41e0fcfd52ad0f2",
+      "tests/test_government.py": "b99f44174872556a753b6b87560105464f8ab032583b76cf958458bdc37e0bef",
+      "tools/__init__.py": "72990cb5987feba9a5d1aa366a4e4b29d886a46b4a53887d80eb3f3f643e17d9",
+      "tools/exercise.py": "2fbdda2770b30c270a0cb8180cbcf15c352b99bea0ef46538d23cef31947a6ee",
+      "tools/prepare_reference.py": "4273f1496331b574b9a70251f0e4c3452cda9a42c1dc41798ae4d343dc211ef2",
+      "tools/run_isolated_lab.py": "724ddb39a3987a26b5edccd2ff772d269da45c42b90211a0d78bbeda906da514",
+      "tools/source_manifest.py": "45679d679cdd40560f996461b171d7c642b1c3d98d9c6739485c388f71c36625",
+      "tools/validate_registers.py": "20e50fb61ca5e563cc33fcecca7658b148708a37158aef94cd1e4edc99966bf3"
+    },
+    "reference": {
+      "commit": "747cf5428daa12a7b89126011a9f64accf4154af",
+      "verified_source_files": 52
+    },
+    "network_isolation": {
+      "passed": true,
+      "interfaces": [
+        "lo"
+      ],
+      "default_ipv4_routes": [],
+      "external_probe": {
+        "target": "192.0.2.1:443 (documentation-only address)",
+        "outcome": "network-unreachable",
+        "errno": 101
+      },
+      "scope": "network namespace observation; not physical air-gap assurance"
+    },
+    "cases": [
+      {
+        "id": "three_mission_register",
+        "passed": true,
+        "observation": {
+          "mission_count": 3,
+          "issues": []
+        },
+        "category": "expected-control"
+      },
+      {
+        "id": "unowned_unclassified_flow_rejected",
+        "passed": true,
+        "observation": {
+          "issues": [
+            "flow: missing classification",
+            "flow: unresolved owner"
+          ]
+        },
+        "category": "expected-control"
+      },
+      {
+        "id": "pinned_shared_source",
+        "passed": true,
+        "observation": {
+          "commit": "747cf5428daa12a7b89126011a9f64accf4154af",
+          "verified_source_files": 52
+        },
+        "category": "expected-control"
+      },
+      {
+        "id": "offline_scoped_read",
+        "passed": true,
+        "observation": {
+          "service": "permit-review",
+          "central_age": 1200,
+          "connected": false
+        },
+        "category": "expected-control"
+      },
+      {
+        "id": "cross_record_denied",
+        "passed": true,
+        "observation": {
+          "result": "denied",
+          "reason": "agency, object or action denied"
+        },
+        "category": "expected-control"
+      },
+      {
+        "id": "cross_agency_denied",
+        "passed": true,
+        "observation": {
+          "result": "denied",
+          "reason": "agency, object or action denied"
+        },
+        "category": "expected-control"
+      },
+      {
+        "id": "other_site_identity_denied",
+        "passed": true,
+        "observation": {
+          "result": "denied",
+          "reason": "identity, local revocation, expiry or site denied"
+        },
+        "category": "expected-control"
+      },
+      {
+        "id": "expired_identity_denied",
+        "passed": true,
+        "observation": {
+          "result": "denied",
+          "reason": "identity, local revocation, expiry or site denied"
+        },
+        "category": "expected-control"
+      },
+      {
+        "id": "nonfinite_clock_denied",
+        "passed": true,
+        "observation": {
+          "result": "denied",
+          "reason": "identity, local revocation, expiry or site denied"
+        },
+        "category": "expected-control"
+      },
+      {
+        "id": "local_review_marker",
+        "passed": true,
+        "observation": {
+          "record": "permit-001",
+          "operator": "reviewer",
+          "time": 100,
+          "effect": "local-review-marker"
+        },
+        "category": "expected-control"
+      },
+      {
+        "id": "viewer_action_denied",
+        "passed": true,
+        "observation": {
+          "result": "denied",
+          "reason": "agency, object or action denied"
+        },
+        "category": "expected-control"
+      },
+      {
+        "id": "service_identity_action_denied",
+        "passed": true,
+        "observation": {
+          "result": "denied",
+          "reason": "agency, object or action denied"
+        },
+        "category": "expected-control"
+      },
+      {
+        "id": "offline_finalization_stopped",
+        "passed": true,
+        "observation": {
+          "result": "denied",
+          "reason": "final public-service determination requires fresh central authority"
+        },
+        "category": "expected-control"
+      },
+      {
+        "id": "stale_connected_finalization_stopped",
+        "passed": true,
+        "observation": {
+          "result": "denied",
+          "reason": "final public-service determination requires fresh central authority"
+        },
+        "category": "expected-control"
+      },
+      {
+        "id": "fresh_connected_finalization_fixture",
+        "passed": true,
+        "observation": {
+          "record": "permit-001",
+          "effect": "synthetic-finalization-only"
+        },
+        "category": "expected-control"
+      },
+      {
+        "id": "local_revocation_enforced",
+        "passed": true,
+        "observation": {
+          "result": "denied",
+          "reason": "identity, local revocation, expiry or site denied"
+        },
+        "category": "expected-control"
+      },
+      {
+        "id": "two_duty_emergency_read",
+        "passed": true,
+        "observation": {
+          "scope": "context-bound, single-use local approval handles; ephemeral state"
+        },
+        "category": "expected-control"
+      },
+      {
+        "id": "emergency_approval_replay_denied",
+        "passed": true,
+        "observation": {
+          "result": "denied",
+          "reason": "approval context, expiry or replay denied"
+        },
+        "category": "expected-control"
+      },
+      {
+        "id": "emergency_other_record_denied",
+        "passed": true,
+        "observation": {
+          "result": "denied",
+          "reason": "approval context, expiry or replay denied"
+        },
+        "category": "expected-control"
+      },
+      {
+        "id": "emergency_duplicate_duty_denied",
+        "passed": true,
+        "observation": {
+          "result": "denied",
+          "reason": "independent local security and operations approvers required"
+        },
+        "category": "expected-control"
+      },
+      {
+        "id": "emergency_expired_approval_denied",
+        "passed": true,
+        "observation": {
+          "result": "denied",
+          "reason": "approval context, expiry or replay denied"
+        },
+        "category": "expected-control"
+      },
+      {
+        "id": "http_own_record",
+        "passed": true,
+        "observation": {
+          "http_status": 200,
+          "expected": 200
+        },
+        "category": "expected-control"
+      },
+      {
+        "id": "http_cross_record_denied",
+        "passed": true,
+        "observation": {
+          "http_status": 403,
+          "expected": 403
+        },
+        "category": "expected-control"
+      },
+      {
+        "id": "http_cross_agency_denied",
+        "passed": true,
+        "observation": {
+          "http_status": 403,
+          "expected": 403
+        },
+        "category": "expected-control"
+      },
+      {
+        "id": "http_missing_session_denied",
+        "passed": true,
+        "observation": {
+          "http_status": 401,
+          "expected": 401
+        },
+        "category": "expected-control"
+      },
+      {
+        "id": "http_review_marker",
+        "passed": true,
+        "observation": {
+          "http_status": 200,
+          "expected": 200
+        },
+        "category": "expected-control"
+      },
+      {
+        "id": "http_viewer_action_denied",
+        "passed": true,
+        "observation": {
+          "http_status": 403,
+          "expected": 403
+        },
+        "category": "expected-control"
+      },
+      {
+        "id": "http_offline_finalization_denied",
+        "passed": true,
+        "observation": {
+          "http_status": 403,
+          "expected": 403
+        },
+        "category": "expected-control"
+      },
+      {
+        "id": "repeated_denial_alert",
+        "passed": true,
+        "observation": {
+          "alerts": [
+            "repeated-denial"
+          ]
+        },
+        "category": "expected-control"
+      },
+      {
+        "id": "unknown_event_detection_gap",
+        "passed": true,
+        "observation": {
+          "alerts": [],
+          "gap": "no rule covers this event"
+        },
+        "category": "observed-gap"
+      },
+      {
+        "id": "four_visibility_states",
+        "passed": true,
+        "observation": {
+          "current": "current",
+          "delayed": "delayed",
+          "missing": "missing",
+          "unverified": "unverified"
+        },
+        "category": "expected-control"
+      },
+      {
+        "id": "central_conclusion_expires",
+        "passed": true,
+        "observation": {
+          "current_at_160": true,
+          "current_at_161": false,
+          "threshold_seconds": 60
+        },
+        "category": "expected-control"
+      },
+      {
+        "id": "future_evidence_unverified",
+        "passed": true,
+        "observation": {
+          "state": "unverified"
+        },
+        "category": "expected-control"
+      },
+      {
+        "id": "unverified_time_export_denied",
+        "passed": true,
+        "observation": {
+          "result": "denied",
+          "reason": "evidence size, schema, site or classification denied"
+        },
+        "category": "expected-control"
+      },
+      {
+        "id": "filtered_custody_export",
+        "passed": true,
+        "observation": {
+          "event_count": 19,
+          "quarantined_unverified_time_events": 1,
+          "custody": {
+            "batch_id": "batch-1",
+            "recipient": "agency-csoc",
+            "purpose": "incident-review",
+            "exporter": "reviewer",
+            "sha256": "1b15625d17c6d71aaa3e96f540f8d9148e472de7f340ea167311b55b074b002c",
+            "scope": "local custody record; not a signed recipient receipt"
+          }
+        },
+        "category": "expected-control"
+      },
+      {
+        "id": "export_recipient_denied",
+        "passed": true,
+        "observation": {
+          "result": "denied",
+          "reason": "recipient, purpose, authority or replay denied"
+        },
+        "category": "expected-control"
+      },
+      {
+        "id": "export_purpose_denied",
+        "passed": true,
+        "observation": {
+          "result": "denied",
+          "reason": "recipient, purpose, authority or replay denied"
+        },
+        "category": "expected-control"
+      },
+      {
+        "id": "export_replay_denied",
+        "passed": true,
+        "observation": {
+          "result": "denied",
+          "reason": "recipient, purpose, authority or replay denied"
+        },
+        "category": "expected-control"
+      },
+      {
+        "id": "restricted_export_denied",
+        "passed": true,
+        "observation": {
+          "result": "denied",
+          "reason": "evidence size, schema, site or classification denied"
+        },
+        "category": "expected-control"
+      },
+      {
+        "id": "placement_no_observation",
+        "passed": true,
+        "observation": {
+          "state": "unverified",
+          "reason": "no observed claims"
+        },
+        "category": "observed-gap"
+      },
+      {
+        "id": "placement_conflict",
+        "passed": true,
+        "observation": {
+          "state": "conflict",
+          "reason": "observed claims differ"
+        },
+        "category": "expected-control"
+      },
+      {
+        "id": "placement_matching_claims_gap",
+        "passed": true,
+        "observation": {
+          "state": "matching-claims",
+          "reason": "independent location assurance still required"
+        },
+        "category": "observed-gap"
+      },
+      {
+        "id": "signed_government_update_admitted",
+        "passed": true,
+        "observation": {
+          "version": 1,
+          "sha256": "32d038841654aacd41070e23e660d235bcd03b0954fac39445a775d255174c41"
+        },
+        "category": "expected-control"
+      },
+      {
+        "id": "altered_update_denied",
+        "passed": true,
+        "observation": {
+          "result": "denied",
+          "reason": "payload digest or size denied"
+        },
+        "category": "expected-control"
+      },
+      {
+        "id": "signed_wrong_site_update_denied",
+        "passed": true,
+        "observation": {
+          "result": "denied",
+          "reason": "destination or compatibility denied"
+        },
+        "category": "expected-control"
+      },
+      {
+        "id": "missing_update_approvals_denied",
+        "passed": true,
+        "observation": {
+          "result": "denied",
+          "reason": "two independent approvals required"
+        },
+        "category": "expected-control"
+      },
+      {
+        "id": "update_replay_denied",
+        "passed": true,
+        "observation": {
+          "result": "denied",
+          "reason": "replay or version rollback denied"
+        },
+        "category": "expected-control"
+      },
+      {
+        "id": "ephemeral_update_restart_gap",
+        "passed": true,
+        "observation": {
+          "accepted_old_version_after_new_gate": 1,
+          "gap": "protected durable replay state absent"
+        },
+        "category": "observed-gap"
+      },
+      {
+        "id": "interrupted_update_denied",
+        "passed": true,
+        "observation": {
+          "result": "denied",
+          "reason": "injected interruption before activation"
+        },
+        "category": "expected-control"
+      },
+      {
+        "id": "interrupted_update_keeps_active",
+        "passed": true,
+        "observation": {
+          "active_version": 1
+        },
+        "category": "expected-control"
+      },
+      {
+        "id": "approved_government_rollback",
+        "passed": true,
+        "observation": {
+          "active_version": 1
+        },
+        "category": "expected-control"
+      },
+      {
+        "id": "clean_restore_config_records_keys",
+        "passed": true,
+        "observation": {
+          "samples_seconds": [
+            0.00035045399999944493,
+            0.0003024540001206333,
+            0.00030295400028990116,
+            0.0002894119988923194,
+            0.00029053800062683877
+          ],
+          "restored_records": 3,
+          "live_records": 4,
+          "missing_record_ids": [
+            "permit-after-snapshot"
+          ],
+          "scope": "tiny software-key/config/record fixture; not whole-service RTO/RPO"
+        },
+        "category": "expected-control"
+      },
+      {
+        "id": "actual_post_snapshot_change_absent",
+        "passed": true,
+        "observation": {
+          "missing_record_ids": [
+            "permit-after-snapshot"
+          ]
+        },
+        "category": "expected-control"
+      },
+      {
+        "id": "wrong_restoration_key_denied",
+        "passed": true,
+        "observation": {
+          "result": "denied",
+          "reason": "snapshot restoration failed"
+        },
+        "category": "expected-control"
+      },
+      {
+        "id": "dirty_restoration_target_denied",
+        "passed": true,
+        "observation": {
+          "result": "denied",
+          "reason": "clean restoration directory required"
+        },
+        "category": "expected-control"
+      },
+      {
+        "id": "signed_router_data_admitted",
+        "passed": true,
+        "observation": {
+          "version": 2,
+          "sha256": "ca2edcf72affb175a415a09dca5fc30f75d74d8f2bb9958bf25701cf6e30b8e6",
+          "site": "north",
+          "tools": [
+            "summarize"
+          ]
+        },
+        "category": "expected-control"
+      },
+      {
+        "id": "ai_summary_filtered",
+        "passed": true,
+        "observation": {
+          "service": "permit-review",
+          "status": "pending",
+          "decision_owner": "human public-service owner",
+          "model": "deterministic-fixture"
+        },
+        "category": "expected-control"
+      },
+      {
+        "id": "ai_cross_agency_denied",
+        "passed": true,
+        "observation": {
+          "result": "denied",
+          "reason": "agency, object or action denied"
+        },
+        "category": "expected-control"
+      },
+      {
+        "id": "ai_shell_denied",
+        "passed": true,
+        "observation": {
+          "result": "denied",
+          "reason": "tool not permitted"
+        },
+        "category": "expected-control"
+      },
+      {
+        "id": "ai_non_admitted_tool_denied",
+        "passed": true,
+        "observation": {
+          "result": "denied",
+          "reason": "tool not permitted"
+        },
+        "category": "expected-control"
+      },
+      {
+        "id": "router_data_replay_denied",
+        "passed": true,
+        "observation": {
+          "result": "denied",
+          "reason": "replay or version rollback denied"
+        },
+        "category": "expected-control"
+      },
+      {
+        "id": "router_data_downgrade_denied",
+        "passed": true,
+        "observation": {
+          "result": "denied",
+          "reason": "replay or version rollback denied"
+        },
+        "category": "expected-control"
+      },
+      {
+        "id": "explicit_network_isolation",
+        "passed": true,
+        "observation": {
+          "passed": true,
+          "interfaces": [
+            "lo"
+          ],
+          "default_ipv4_routes": [],
+          "external_probe": {
+            "target": "192.0.2.1:443 (documentation-only address)",
+            "outcome": "network-unreachable",
+            "errno": 101
+          },
+          "scope": "network namespace observation; not physical air-gap assurance"
+        },
+        "category": "actual-network-observation"
+      }
+    ],
+    "restoration": {
+      "samples_seconds": [
+        0.00035045399999944493,
+        0.0003024540001206333,
+        0.00030295400028990116,
+        0.0002894119988923194,
+        0.00029053800062683877
+      ],
+      "restored_records": 3,
+      "live_records": 4,
+      "missing_record_ids": [
+        "permit-after-snapshot"
+      ],
+      "scope": "tiny software-key/config/record fixture; not whole-service RTO/RPO"
+    },
+    "passed": true,
+    "limits": [
+      "Synthetic public-service decisions, ephemeral fixture sessions and local approval state.",
+      "No production login/MFA/TLS, protected durable anti-rollback, HSM or provider placement assurance.",
+      "AI is a deterministic router; no learned model, real citizen data or prompt robustness evaluation.",
+      "Passed expected-gap cases identify unsafe limitations; no compliance or accreditation claim.",
+      "Restoration measures a tiny fixture on the selected temporary filesystem, not whole-site recovery."
+    ]
+  },
+  "passed": true
+}
